@@ -48,6 +48,7 @@ $wgResourceModules['ext.sitescout.js'] = array(
 	'messages' => array(
 		'sitescout-new', 'sitescout-minor'
 	),
+	'dependencies' => 'mediawiki.util',
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'SiteScout'
 );

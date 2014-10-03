@@ -24,7 +24,7 @@ class SiteScoutPage extends SpecialPage {
 	 * @param mixed|null $par Parameter passed to the special page or null
 	 */
 	public function execute( $par ) {
-		global $wgHooks;
+		global $wgUploadPath;
 
 		$out = $this->getOutput();
 		$request = $this->getRequest();
@@ -37,11 +37,7 @@ class SiteScoutPage extends SpecialPage {
 
 		// Expose $wgUploadPath to JavaScript so it can use it (it's needed so
 		// that the JS file can build the correct path to the avatars directory)
-		$wgHooks['MakeGlobalVariablesScript'][] = function( &$vars ) {
-			global $wgUploadPath;
-			$vars['wgUploadPath'] = $wgUploadPath;
-			return true;
-		};
+		$out->addJsConfigVars( 'wgUploadPath', $wgUploadPath );
 
 		$output = '';
 
