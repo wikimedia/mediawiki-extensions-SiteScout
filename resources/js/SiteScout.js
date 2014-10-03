@@ -81,16 +81,16 @@ var SiteScout = window.SiteScout = {
 	processItems: function( request ) {
 		var itemsXML;
 		var item;
-        try {
+		try {
 			itemsXML = request.responseXML.getElementsByTagName( 'items' )[0];
 			item = itemsXML.getElementsByTagName( 'item' );
-        } catch ( e ) {
+		} catch ( e ) {
 			if ( !SiteScout.reload ) {
 				setTimeout( 'SiteScout.getItems()', 10000 );
 			}
 			return;
-        }
-        for ( var i = 0; i < item.length; i++ ) {
+		}
+		for ( var i = 0; i < item.length; i++ ) {
 			SiteScout.items[i] = {
 				type: item[i].getElementsByTagName( 'type' )[0].firstChild.nodeValue,
 				type_icon: item[i].getElementsByTagName( 'type_icon' )[0].firstChild.nodeValue,
@@ -110,40 +110,40 @@ var SiteScout = window.SiteScout = {
 			if ( i === 0 ) {
 				timestamp = SiteScout.items[i].timestamp;
 			}
-        }
+		}
 		if ( !SiteScout.reload ) {
-        	SiteScout.push();
+			SiteScout.push();
 		}
 	},
 
 	push: function() {
-        if ( SiteScout.play === 0 ) {
+		if ( SiteScout.play === 0 ) {
 			setTimeout( 'SiteScout.push()', 1000 );
-            return;
-        }
-        var cell;
-        var cellnext;
-        var text;
-        var style = '';
-        var item = SiteScout.items.pop();
+			return;
+		}
+		var cell;
+		var cellnext;
+		var text;
+		var style = '';
+		var item = SiteScout.items.pop();
 		text = SiteScout.displayLine( item );
 
 		$( '#comment-1' ).css( 'opacity', 0.0 );
-        for ( var i = ( itemMax - 1 ); i >= 1; i-- ) {
-	        cell = document.getElementById( 'comment-' + i );
-	        cellnext = document.getElementById( 'comment-' + ( i + 1 ) );
-	        if ( cell.innerHTML !== '' ) {
-	        	cellnext.innerHTML = cell.innerHTML;
-	        }
-        }
+		for ( var i = ( itemMax - 1 ); i >= 1; i-- ) {
+			cell = document.getElementById( 'comment-' + i );
+			cellnext = document.getElementById( 'comment-' + ( i + 1 ) );
+			if ( cell.innerHTML !== '' ) {
+				cellnext.innerHTML = cell.innerHTML;
+			}
+		}
 
 		$( '#comment-1' ).show( 2000 ).html( text );
 
-        if ( SiteScout.items.length > 0 ) {
+		if ( SiteScout.items.length > 0 ) {
 			setTimeout( 'SiteScout.push()', 2000 );
-        } else {
+		} else {
 			setTimeout( 'SiteScout.getItems()', 5000 );
-        }
+		}
 	},
 
 	start: function() {
