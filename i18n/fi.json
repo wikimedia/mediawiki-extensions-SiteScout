@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jack Phoenix <jack@countervandalism.net>"
+		]
+	},
+	"sitescout-anon": "Anonyymi käyttäjä",
+	"sitescout-new": "uusi",
+	"sitescout-minor": "pieni",
+	"sitescout-today-stats": "Tämän päivän tilastot",
+	"sitescout-votes": "Äänet",
+	"sitescout-edits": "Muokkaukset",
+	"sitescout-comments": "Kommentit",
+	"sitescout-thoughts": "Verkoston ajatukset",
+	"sitescout-header-type": "Tyyppi",
+	"sitescout-header-page": "Sivu",
+	"sitescout-header-comment": "Kommentti",
+	"sitescout-header-user": "Käyttäjä",
+	"sitescout-change-filter": "muuta suodatinta"
+}

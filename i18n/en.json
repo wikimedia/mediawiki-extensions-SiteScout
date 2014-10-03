@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"sitescout": "Site Scout",
+	"sitescout-anon": "Anonymous Fanatic",
+	"sitescout-new": "new",
+	"sitescout-minor": "minor",
+	"sitescout-today-stats": "Today's Stats",
+	"sitescout-votes": "Votes",
+	"sitescout-edits": "Edits",
+	"sitescout-comments": "Comments",
+	"sitescout-thoughts": "Network Thoughts",
+	"sitescout-header-type": "Type",
+	"sitescout-header-page": "Page",
+	"sitescout-header-comment": "Comment",
+	"sitescout-header-user": "User",
+	"sitescout-change-filter": "change filter"
+}
