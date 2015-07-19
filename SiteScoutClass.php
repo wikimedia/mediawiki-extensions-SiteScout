@@ -496,7 +496,7 @@ class SiteScout {
 		**/
 		$block_list = array();
 		if ( $wgUser->getId() != 0 ) {
-			$block_list = Comment::getBlockList( $wgUser->getId() );
+			$block_list = CommentFunctions::getBlockList( $wgUser->getId() );
 		}
 
 		$dbr = wfGetDB( DB_SLAVE );
