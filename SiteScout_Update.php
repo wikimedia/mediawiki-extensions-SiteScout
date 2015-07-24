@@ -7,12 +7,11 @@ class SiteScoutUpdate extends UnlistedSpecialPage {
 	}
 
 	public function execute( $par ) {
-		global $wgMimeType, $wgOutputEncoding;
+		global $wgMimeType;
 
 		$request = $this->getRequest();
 
 		$wgMimeType = 'text/xml';
-		$wgOutputEncoding = 'UTF-8';
 
 		$scout = new SiteScoutXML;
 		$scout->setShowEdits( $request->getVal( 'edits' ) );
