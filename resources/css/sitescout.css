@@ -31,7 +31,7 @@ a.item-title {
 	text-decoration: none;
 }
 
-.item-info  {
+.item-info {
 	font-size: 85%;
 	text-align: center;
 	width: 45px;
@@ -59,6 +59,7 @@ a.item-title {
 .item-user-talk img {
 	vertical-align: middle;
 	border: 0px;
+	margin-left: 3px;
 }
 
 .item-comment {

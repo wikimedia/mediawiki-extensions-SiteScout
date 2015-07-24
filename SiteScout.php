@@ -8,18 +8,10 @@
  * @author David Pean <david.pean@gmail.com>
  * @author Jack Phoenix <jack@countervandalism.net>
  * @copyright Copyright © 2007 David Pean
- * @copyright Copyright © 2014 Jack Phoenix
+ * @copyright Copyright © 2014-2015 Jack Phoenix
  * @link https://www.mediawiki.org/wiki/Extension:SiteScout Documentation
  * @license https://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
-
-/**
- * Protect against register_globals vulnerabilities.
- * This line must be present before any global variable is referenced.
- */
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( "This is not a valid entry point.\n" );
-}
 
 // Extension credits that show up on Special:Version
 $wgExtensionCredits['specialpage'][] = array(

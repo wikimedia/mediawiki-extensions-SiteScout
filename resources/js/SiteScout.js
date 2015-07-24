@@ -160,7 +160,7 @@ var SiteScout = window.SiteScout = {
 		}
 		text = '<div class="site-scout">';
 		text += '<span class="item-info">'
-		+		'<img src="' + mw.config.get( 'wgExtensionAssetsPath' ) + '/SocialProfile/images/' + item.type_icon + '" border="0" alt="" />'
+		+		'<img src="' + mw.config.get( 'wgExtensionAssetsPath' ) + '/SocialProfile/images/' + item.type_icon + '" alt="" />'
 		+			( ( item.is_new == 1 ) ? '<br /><span class="edit-new">' + mw.msg( 'sitescout-new' ) + '</span>' : ( ( item.is_minor == 1 ) ? '<br /><span class="edit-minor">' + mw.msg( 'sitescout-minor' ) + '</span>' : '' ) )
 		+	'</span>'
 		+	'<a href="' + item.url + '" class="item-title">'
@@ -172,10 +172,10 @@ var SiteScout = window.SiteScout = {
 		+	'</span>'
 		+	'<span class="item-user">'
 		+	'<a href="' + item.user_page + '" class="item-user-link">'
-		+		'<img src="' + mw.config.get( 'wgUploadPath' ) + '/avatars/' + item.avatar + '" border="0" alt="" /> '
+		+		'<img src="' + mw.config.get( 'wgUploadPath' ) + '/avatars/' + item.avatar + '" alt="" /> '
 		+		item.username
 		+	'</a>'
-		+	'<a href="' + item.user_talkpage + '" class="item-user-talk"><img src="' + mw.config.get( 'wgExtensionAssetsPath' ) + '/SiteScout/resources/images/talkPageIcon.png" border="0" hspace="3" align="middle" alt="" /></a>'
+		+	'<a href="' + item.user_talkpage + '" class="item-user-talk"><img src="' + mw.config.get( 'wgExtensionAssetsPath' ) + '/SiteScout/resources/images/talkPageIcon.png" hspace="3" align="middle" alt="" /></a>'
 		+	'</span>'
 		+	'</div>';
 		return text;
@@ -214,7 +214,7 @@ var SiteScout = window.SiteScout = {
 		document.getElementById( 'vote_stats' ).innerHTML = '<table><tr><td><table style="background-color:#009900; height:7px;" width="' + ( SiteScout.votes_count / SiteScout.largest_value * 300 ) + '"><tr><td></td></tr></table></td><td>' + SiteScout.votes_count + '</td></tr></table>';
 		document.getElementById( 'comment_stats' ).innerHTML = '<table><tr><td><table style="background-color:#990000; height:7px;" width="' + ( SiteScout.comments_count / SiteScout.largest_value * 300 ) + '"><tr><td></td></tr></table></td><td>' + SiteScout.comments_count + '</td></tr></table>';
 		if ( document.getElementById( 'networkupdates_stats' ) ) {
-			document.getElementById( 'networkupdates_stats' ).innerHTML = '<table><tr><td><table style="background-color:#FFFCA9; height:7px;" width="' + (SiteScout.networkupdates_count / SiteScout.largest_value * 300 ) + '"><tr><td></td></tr></table></td><td>' + SiteScout.networkupdates_count + '</td></tr></table>';
+			document.getElementById( 'networkupdates_stats' ).innerHTML = '<table><tr><td><table style="background-color:#FFFCA9; height:7px;" width="' + ( SiteScout.networkupdates_count / SiteScout.largest_value * 300 ) + '"><tr><td></td></tr></table></td><td>' + SiteScout.networkupdates_count + '</td></tr></table>';
 		}
 	}
 };

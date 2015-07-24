@@ -94,7 +94,7 @@ class SiteScout {
 							</tr>
 							<tr>
 								<td>
-									<img src=\"{$imgPath}voteIcon.gif\" border=\"0\" alt=\"Votes\"/>
+									<img src=\"{$imgPath}voteIcon.gif\" alt=\"Votes\"/>
 								</td>
 								<td>" . wfMessage( 'sitescout-votes' )->plain() . '</td>
 								<td>
@@ -116,7 +116,7 @@ class SiteScout {
 							</tr>
 							<tr>
 								<td>
-									<img src=\"{$imgPath}editIcon.gif\" border=\"0\" alt=\"Edits\"/>
+									<img src=\"{$imgPath}editIcon.gif\" alt=\"Edits\"/>
 								</td>
 								<td>" . wfMessage( 'sitescout-edits' )->plain() . '</td>
 								<td>
@@ -139,7 +139,7 @@ class SiteScout {
 
 							<tr>
 								<td>
-									<img src=\"{$imgPath}comment.gif\" border=\"0\" alt=\"Comments\"/>
+									<img src=\"{$imgPath}comment.gif\" alt=\"Comments\"/>
 								</td>
 								<td>" . wfMessage( 'sitescout-comments' )->plain() . '</td>
 								<td>
@@ -162,7 +162,7 @@ class SiteScout {
 		if ( class_exists( 'UserStatus' ) ) {
 			$output .= "<tr>
 									<td>
-										<img src=\"{$imgPath}note.gif\" border=\"0\" alt=\"Network Thoughts\"/>
+										<img src=\"{$imgPath}note.gif\" alt=\"Network Thoughts\"/>
 									</td>
 									<td>" . wfMessage( 'sitescout-thoughts' )->plain() . '</td>
 									<td>
@@ -170,7 +170,7 @@ class SiteScout {
 											<table>
 												<tr>
 													<td>
-														<table bgcolor="#FFFCA9" height="7" width="' . ( $networkupdates / $largest_value * 300 ) . "\">
+														<table style="background-color: #FFFCA9; height: 7px; width:' . ( $networkupdates / $largest_value * 300 ) . "px;\">
 															<tr>
 																<td></td>
 															</tr>
@@ -626,7 +626,7 @@ class SiteScoutHTML extends SiteScout {
 				$title = Title::makeTitle( $item['namespace'], $item['pagetitle'] );
 				$user_title = Title::makeTitle( NS_USER, $item['username'] );
 				$output .= '<div id="comment-' . $x . '" class="site-scout"><span class="item-info">';
-				$output .= '<img src="' . $imgPath . $this->getTypeIcon( $item['type'] ) . '" border="0" />';
+				$output .= '<img src="' . $imgPath . $this->getTypeIcon( $item['type'] ) . '" alt="" />';
 
 				if ( $item['minor'] == 1 ) {
 					$output .= '<br /><span class="edit-minor">' . wfMessage( 'sitescout-minor' )->plain() . '</span>';
@@ -668,11 +668,11 @@ class SiteScoutHTML extends SiteScout {
 
 				$avatar = new wAvatar( $item['userid'], 's' );
 				$commentIcon = $avatar->getAvatarURL();
-				$talk_page = $user_title->getTalkPage()->getFullURL();
+				$talk_page = htmlspecialchars( $user_title->getTalkPage()->getFullURL(), ENT_QUOTES );
 				if ( $wgUserBoard ) {
 					$talk_page = UserBoard::getUserBoardURL( $item['username'] );
 				}
-				$output .= '<span class="item-user"><a href="' . $user_title->getFullURL() . '" class="item-user-link">' . $commentIcon . ' ' . $item['username'] . '</a><a href="' . $talk_page . '" class="item-user-talk"><img src="' . $wgExtensionAssetsPath . '/SiteScout/resources/images/talkPageIcon.png" alt="" border="0" hspace="3" align="middle" /></a></span>';
+				$output .= '<span class="item-user"><a href="' . htmlspecialchars( $user_title->getFullURL(), ENT_QUOTES ) . '" class="item-user-link">' . $commentIcon . ' ' . $item['username'] . '</a><a href="' . $talk_page . '" class="item-user-talk"><img src="' . $wgExtensionAssetsPath . '/SiteScout/resources/images/talkPageIcon.png" alt="" /></a></span>';
 				$output .= '</div>';
 				$x++;
 			}
