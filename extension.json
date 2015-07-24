@@ -1,0 +1,53 @@
+{
+	"name": "SiteScout",
+	"version": "2.0",
+	"author": [
+		"David Pean",
+		"Jack Phoenix"
+	],
+	"license-name": "GPL-2.0+",
+	"url": "https://www.mediawiki.org/wiki/Extension:SiteScout",
+	"description": "[[Special:SiteScout|Displays recent social changes]]",
+	"type": "specialpage",
+	"SpecialPages": {
+		"SiteScout": "SiteScoutPage",
+		"SiteScoutUpdate": "SiteScoutUpdate"
+	},
+	"MessagesDirs": {
+		"SiteScout": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"SiteScoutAliases": "SiteScout.alias.php"
+	},
+	"AutoloadClasses": {
+		"SiteScout": "SiteScoutClass.php",
+		"SiteScoutHTML": "SiteScoutClass.php",
+		"SiteScoutXML": "SiteScoutClass.php",
+		"SiteScoutPage": "SpecialSiteScout.php",
+		"SiteScoutUpdate": "SiteScout_Update.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SiteScout"
+	},
+	"ResourceModules": {
+		"ext.sitescout.css": {
+			"styles": "resources/css/sitescout.css",
+			"position": "top"
+		},
+		"ext.sitescout.js": {
+			"scripts": "resources/js/SiteScout.js",
+			"messages": [
+				"sitescout-new",
+				"sitescout-minor"
+			],
+			"dependencies": [
+				"mediawiki.util"
+			],
+			"position": "bottom"
+		}
+	},
+	"manifest_version": 1
+}
