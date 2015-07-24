@@ -102,7 +102,7 @@ class SiteScout {
 										<table>
 											<tr>
 												<td>
-													<table style="background-color:#009900; height:7px;" width="' . ( $votes / $largest_value * 300 ) . "\">
+													<table style="background-color:#009900; height:7px; width:' . ( $votes / $largest_value * 300 ) . "px;\">
 														<tr>
 															<td></td>
 														</tr>
@@ -124,7 +124,7 @@ class SiteScout {
 										<table>
 											<tr>
 												<td>
-													<table style="background-color:#285C98; height:7px;" width="' . ( $edits / $largest_value * 300 ) . "\">
+													<table style="background-color:#285C98; height:7px; width:' . ( $edits / $largest_value * 300 ) . "px;\">
 														<tr>
 															<td></td>
 														</tr>
@@ -147,7 +147,7 @@ class SiteScout {
 										<table>
 											<tr>
 												<td>
-													<table style="background-color:#990000; height:7px;" width="' . ( $comments / $largest_value * 300 ) . "\">
+													<table style="background-color:#990000; height:7px; width:' . ( $comments / $largest_value * 300 ) . "px;\">
 														<tr>
 															<td></td>
 														</tr>
@@ -202,7 +202,7 @@ class SiteScout {
 				</tr>
 			</table>
 
-		</td><td width="25"></td><td valign="bottom">
+		</td><td style="width:25px;"></td><td valign="bottom">
 		</td></tr></table>';
 		// Hidden utility div for the JavaScript file; required (AFAIK) in the
 		// new, ResourceLoader-ful world where inline JS is a strict no-no
