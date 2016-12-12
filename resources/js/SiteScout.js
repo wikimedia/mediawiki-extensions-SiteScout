@@ -204,7 +204,7 @@ var SiteScout = window.SiteScout = {
 	 * @param {String} stat 'edit', 'vote', 'networkupdate' or 'comment'
 	 */
 	updateStat: function( stat ) {
-		eval( 'SiteScout.' + stat + 's_count=' + 'SiteScout.' + stat + 's_count+1;' );
+		SiteScout[stat + 's_count']++;
 		SiteScout.setLargestValue();
 		SiteScout.updateStatChart();
 	},
@@ -233,7 +233,7 @@ $( document ).ready( function() {
 
 	SiteScout.edits = $util.data( 'edits' );
 	SiteScout.comments = $util.data( 'comments' );
-	SiteScout.edits = $util.data( 'networkupdates' );
+	SiteScout.networkupdates = $util.data( 'networkupdates' );
 
 	SiteScout.setTimestamp( $( 'div#sitescout-utility-time' ).html() );
 
