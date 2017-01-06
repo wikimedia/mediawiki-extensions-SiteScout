@@ -219,7 +219,7 @@ var SiteScout = window.SiteScout = {
 	}
 };
 
-$( document ).ready( function() {
+$( function() {
 	// Warning: ugly code ahead
 	// This replaces some old JS by pulling the data from the data attributes
 	// (yay for HTML5!) of a hidden div...or rather, two; the first batch of
