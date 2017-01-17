@@ -428,7 +428,7 @@ class SiteScout {
 		$res = $dbr->select(
 			'recentchanges',
 			array(
-				'UNIX_TIMESTAMP(rc_timestamp) AS item_date', 'rc_title',
+				'rc_timestamp AS item_date', 'rc_title',
 				'rc_user', 'rc_user_text', 'rc_comment', 'rc_id', 'rc_minor',
 				'rc_new', 'rc_namespace', 'rc_cur_id', 'rc_this_oldid',
 				'rc_last_oldid'
@@ -442,7 +442,7 @@ class SiteScout {
 			$this->all_items[] = array(
 				'id' => 0,
 				'type' => 'edit',
-				'timestamp' => $row->item_date,
+				'timestamp' => wfTimestamp( TS_UNIX, $row->item_date ),
 				'pagetitle' => $row->rc_title,
 				'namespace' => $row->rc_namespace,
 				'username' => $row->rc_user_text,
@@ -463,7 +463,7 @@ class SiteScout {
 		$res = $dbr->select(
 			array( 'Vote', 'page' ),
 			array(
-				'UNIX_TIMESTAMP(vote_date) AS item_date', 'username', 'page_title',
+				'vote_date AS item_date', 'username', 'page_title',
 				'vote_ip', 'vote_user_id', 'page_namespace'
 			),
 			$where,
@@ -480,7 +480,7 @@ class SiteScout {
 			$this->all_items[] = array(
 				'id' => 0,
 				'type' => 'vote',
-				'timestamp' => $row->item_date,
+				'timestamp' => wfTimestamp( TS_UNIX, $row->item_date ),
 				'pagetitle' => $row->page_title,
 				'namespace' => $row->page_namespace,
 				'username' => $username,
@@ -509,7 +509,7 @@ class SiteScout {
 		$res = $dbr->select(
 			array( 'Comments', 'page' ),
 			array(
-				'UNIX_TIMESTAMP(comment_date) AS item_date', 'Comment_Username',
+				'Comment_Date AS item_date', 'Comment_Username',
 				'page_title', 'Comment_Text', 'Comment_user_id', 'CommentID',
 				'page_namespace'
 			),
@@ -528,7 +528,7 @@ class SiteScout {
 				$this->all_items[] = array(
 					'id' => $row->CommentID,
 					'type' => 'comment',
-					'timestamp' => $row->item_date,
+					'timestamp' => wfTimestamp( TS_UNIX, $row->item_date ),
 					'pagetitle' => $row->page_title,
 					'namespace' => $row->page_namespace,
 					'username' => $username,
@@ -553,7 +553,7 @@ class SiteScout {
 			$res = $dbr->select(
 				'user_status',
 				array(
-					'us_id', 'UNIX_TIMESTAMP(us_date) AS item_date',
+					'us_id', 'us_date AS item_date',
 					'us_user_name', 'us_user_id', 'us_sport_id', 'us_team_id',
 					'us_text'
 				),
@@ -565,7 +565,7 @@ class SiteScout {
 				$this->all_items[] = array(
 					'id' => $row->us_id,
 					'type' => 'networkupdate',
-					'timestamp' => $row->item_date,
+					'timestamp' => wfTimestamp( TS_UNIX, $row->item_date ),
 					'pagetitle' => $row->us_user_name,
 					'namespace' => NS_USER,
 					'username' => $row->us_user_name,
