@@ -7,7 +7,7 @@
 	],
 	"license-name": "GPL-2.0+",
 	"url": "https://www.mediawiki.org/wiki/Extension:SiteScout",
-	"description": "[[Special:SiteScout|Displays recent social changes]]",
+	"descriptionmsg": "sitescout-desc",
 	"type": "specialpage",
 	"SpecialPages": {
 		"SiteScout": "SiteScoutPage",
