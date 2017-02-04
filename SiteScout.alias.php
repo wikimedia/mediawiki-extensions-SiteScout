@@ -12,4 +12,5 @@ $specialPageAliases = array();
 /** English */
 $specialPageAliases['en'] = array(
 	'SiteScout' => array( 'SiteScout' ),
+	'SiteScoutUpdate' => array( 'SiteScoutUpdate' ),
 );
