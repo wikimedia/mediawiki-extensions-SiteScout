@@ -1,6 +1,6 @@
 {
 	"name": "SiteScout",
-	"version": "2.0",
+	"version": "2.1.0",
 	"author": [
 		"David Pean",
 		"Jack Phoenix"
@@ -19,14 +19,14 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"SiteScoutAliases": "SiteScout.alias.php"
+		"SiteScoutAliases": "includes/SiteScout.alias.php"
 	},
 	"AutoloadClasses": {
-		"SiteScout": "SiteScoutClass.php",
-		"SiteScoutHTML": "SiteScoutClass.php",
-		"SiteScoutXML": "SiteScoutClass.php",
-		"SiteScoutPage": "SpecialSiteScout.php",
-		"SiteScoutUpdate": "SiteScout_Update.php"
+		"SiteScout": "includes/SiteScout.class.php",
+		"SiteScoutHTML": "includes/SiteScoutHTML.class.php",
+		"SiteScoutXML": "includes/SiteScoutXML.class.php",
+		"SiteScoutPage": "includes/specials/SpecialSiteScout.php",
+		"SiteScoutUpdate": "includes/specials/SpecialSiteScoutUpdate.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
