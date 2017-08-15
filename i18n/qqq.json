@@ -1,4 +1,18 @@
 {
 	"@metadata": {},
-	"sitescout-desc": "{{desc|name=SiteScout|url=https://www.mediawiki.org/wiki/Extension:SiteScout}}"
+	"sitescout": "{{name}}",
+	"sitescout-desc": "{{desc|name=SiteScout|url=https://www.mediawiki.org/wiki/Extension:SiteScout}}",
+	"sitescout-anon": "Used as username, when anonym user",
+	"sitescout-new": "Used to indicate new items\nUsed with javascript",
+	"sitescout-minor": "Used to indicate minor items\nUsed with javascript",
+	"sitescout-today-stats": "Used as header",
+	"sitescout-votes": "Used as text inside a table",
+	"sitescout-edits": "Used as text inside a table",
+	"sitescout-comments": "Used as text inside a table",
+	"sitescout-thoughts": "Used as text inside a table",
+	"sitescout-header-type": "Used as header",
+	"sitescout-header-page": "Used as header",
+	"sitescout-header-comment": "Used as header",
+	"sitescout-header-user": "Used as header",
+	"sitescout-change-filter": "Used as link text"
 }
