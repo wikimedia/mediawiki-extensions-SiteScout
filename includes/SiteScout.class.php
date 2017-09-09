@@ -240,7 +240,7 @@ class SiteScout {
 	 * @return int
 	 */
 	function getEditCount() {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			'recentchanges',
 			array(
@@ -269,7 +269,7 @@ class SiteScout {
 	 * @return int
 	 */
 	function getCommentCount() {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			'Comments',
 			array(
@@ -298,7 +298,7 @@ class SiteScout {
 	 * @return int
 	 */
 	function getVoteCount() {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			'Vote',
 			array(
@@ -327,7 +327,7 @@ class SiteScout {
 	 * @return int
 	 */
 	function getNetworkUpdatesCount() {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			'user_status',
 			array(
@@ -419,7 +419,7 @@ class SiteScout {
 		/**
 		Edits
 		**/
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 
 		$where = array();
 		if ( $this->timestamp > 0 ) {
@@ -499,7 +499,7 @@ class SiteScout {
 			$block_list = CommentFunctions::getBlockList( $wgUser->getId() );
 		}
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$where = array(
 			'comment_page_id = page_id'
 		);
@@ -545,7 +545,7 @@ class SiteScout {
 		TODO: Turn this into a hook so it's not in the base code
 		**/
 		if ( class_exists( 'UserStatus' ) ) {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 			$where = array();
 			if ( $this->timestamp > 0 ) {
 				// $where[] = 'UNIX_TIMESTAMP(us_date) > ' . $this->timestamp;
