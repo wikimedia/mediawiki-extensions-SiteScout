@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftabuzzaman"
+		]
+	},
+	"sitescout-new": "নতুন",
+	"sitescout-minor": "অনুল্লেখ্য",
+	"sitescout-today-stats": "আজকের পরিসংখ্যান",
+	"sitescout-votes": "ভোট",
+	"sitescout-edits": "সম্পাদনা",
+	"sitescout-comments": "মন্তব্যসমূহ",
+	"sitescout-header-type": "ধরন",
+	"sitescout-header-page": "পাতা",
+	"sitescout-header-comment": "মন্তব্য",
+	"sitescout-header-user": "ব্যবহারকারী"
+}

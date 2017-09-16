@@ -1,5 +1,5 @@
 {
-	"@metadata": {},
+	"@metadata": [],
 	"sitescout": "{{name}}",
 	"sitescout-desc": "{{desc|name=SiteScout|url=https://www.mediawiki.org/wiki/Extension:SiteScout}}",
 	"sitescout-anon": "Used as username, when anonym user",

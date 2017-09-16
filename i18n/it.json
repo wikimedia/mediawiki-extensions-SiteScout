@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"sitescout-anon": "Fanatico anonimo",
+	"sitescout-new": "nuovo",
+	"sitescout-minor": "minore",
+	"sitescout-today-stats": "Statistiche di oggi",
+	"sitescout-votes": "Voti",
+	"sitescout-edits": "Modifiche",
+	"sitescout-comments": "Commenti",
+	"sitescout-header-type": "Tipo",
+	"sitescout-header-page": "Pagina",
+	"sitescout-header-comment": "Commento",
+	"sitescout-header-user": "Utente",
+	"sitescout-change-filter": "cambia filtro"
+}

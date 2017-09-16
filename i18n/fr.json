@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wladek92"
+		]
+	},
+	"sitescout": "Site Scout",
+	"sitescout-anon": "Fanatique anonyme",
+	"sitescout-new": "nouveau",
+	"sitescout-minor": "mineur",
+	"sitescout-today-stats": "Statistiques du jour",
+	"sitescout-votes": "Votes",
+	"sitescout-edits": "Modifications",
+	"sitescout-comments": "Commentaires",
+	"sitescout-header-type": "Type",
+	"sitescout-header-page": "Page",
+	"sitescout-header-comment": "Commentaire",
+	"sitescout-header-user": "Utilisateur",
+	"sitescout-change-filter": "changer le filtre"
+}

@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"sitescout": "网站侦察",
+	"sitescout-desc": "[[Special:SiteScout|显示最近社交更改]]",
+	"sitescout-anon": "匿名狂热者",
+	"sitescout-new": "新",
+	"sitescout-minor": "小",
+	"sitescout-today-stats": "今日统计",
+	"sitescout-votes": "投票",
+	"sitescout-edits": "编辑",
+	"sitescout-comments": "注释",
+	"sitescout-thoughts": "网络思想",
+	"sitescout-header-type": "类型",
+	"sitescout-header-page": "页面",
+	"sitescout-header-comment": "注释",
+	"sitescout-header-user": "用户",
+	"sitescout-change-filter": "更改过滤器"
+}

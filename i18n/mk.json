@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"sitescout": "Извидник",
+	"sitescout-desc": "[[Special:SiteScout|Прикажува скорешни друштвени промени]]",
+	"sitescout-anon": "Анонимен фанатик",
+	"sitescout-new": "ново",
+	"sitescout-minor": "ситно",
+	"sitescout-today-stats": "Денешни статистики",
+	"sitescout-votes": "Гласови",
+	"sitescout-edits": "Уредувања",
+	"sitescout-comments": "Коментари",
+	"sitescout-thoughts": "Мрежни мисли",
+	"sitescout-header-type": "Вид",
+	"sitescout-header-page": "Страница",
+	"sitescout-header-comment": "Коментар",
+	"sitescout-header-user": "Корисник",
+	"sitescout-change-filter": "промени филтер"
+}
