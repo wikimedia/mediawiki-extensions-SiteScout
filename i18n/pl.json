@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"sitescout-new": "nowy",
+	"sitescout-votes": "Głosy",
+	"sitescout-edits": "Edycje",
+	"sitescout-comments": "Komentarze",
+	"sitescout-header-type": "Typ",
+	"sitescout-header-page": "Strona",
+	"sitescout-header-comment": "Komentarz",
+	"sitescout-header-user": "Użytkownik",
+	"sitescout-change-filter": "zmień filtr"
+}
