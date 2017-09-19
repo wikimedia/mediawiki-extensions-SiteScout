@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ommmmid"
+		]
+	},
+	"sitescout-new": "تازه",
+	"sitescout-minor": "جزئی",
+	"sitescout-edits": "ویرایش",
+	"sitescout-header-type": "نوع",
+	"sitescout-header-page": "صفحه",
+	"sitescout-header-comment": "توضیح",
+	"sitescout-header-user": "کاربر",
+	"sitescout-change-filter": "تغییر فیلتر"
+}

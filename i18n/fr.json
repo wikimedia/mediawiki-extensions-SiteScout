@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92"
+			"Wladek92",
+			"Gomoko"
 		]
 	},
 	"sitescout": "Site Scout",
+	"sitescout-desc": "[[Special:SiteScout|Affiche les modifications sociales récentes]]",
 	"sitescout-anon": "Fanatique anonyme",
 	"sitescout-new": "nouveau",
 	"sitescout-minor": "mineur",
@@ -12,6 +14,7 @@
 	"sitescout-votes": "Votes",
 	"sitescout-edits": "Modifications",
 	"sitescout-comments": "Commentaires",
+	"sitescout-thoughts": "Pensées du réseau",
 	"sitescout-header-type": "Type",
 	"sitescout-header-page": "Page",
 	"sitescout-header-comment": "Commentaire",
