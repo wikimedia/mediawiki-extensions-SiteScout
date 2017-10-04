@@ -1,11 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fader"
+			"Fader",
+			"Bengtsson96",
+			"WikiPhoenix"
 		]
 	},
+	"sitescout-desc": "[[Special:SiteScout|Visar senaste sociala ändringar]]",
+	"sitescout-anon": "Anonym fanatiker",
+	"sitescout-new": "ny",
+	"sitescout-minor": "mindre",
+	"sitescout-today-stats": "Dagens statistik",
 	"sitescout-votes": "Röster",
 	"sitescout-edits": "Redigeringar",
 	"sitescout-comments": "Kommentarer",
-	"sitescout-header-user": "Användare"
+	"sitescout-thoughts": "Nätverkstankar",
+	"sitescout-header-type": "Typ",
+	"sitescout-header-page": "Sida",
+	"sitescout-header-comment": "Kommentar",
+	"sitescout-header-user": "Användare",
+	"sitescout-change-filter": "ändra filter"
 }
