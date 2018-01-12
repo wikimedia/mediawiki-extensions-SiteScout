@@ -369,7 +369,7 @@ class SiteScout {
 	function populateItems() {
 		global $wgMemc;
 
-		$key = wfMemcKey( 'site_scout', $this->itemMax );
+		$key = $wgMemc->makeKey( 'site_scout', $this->itemMax );
 		$data = $wgMemc->get( $key );
 		if ( $data ) {
 			wfDebug( "Site scout loaded from cache\n" );
@@ -583,7 +583,7 @@ class SiteScout {
 
 		// Set cache
 		global $wgMemc;
-		$key = wfMemcKey( 'site_scout', $this->itemMax );
+		$key = $wgMemc->makeKey( 'site_scout', $this->itemMax );
 		$wgMemc->set( $key, $this->all_items, 30 );
 	}
 
