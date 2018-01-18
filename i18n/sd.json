@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Indus Asia"
+			"Indus Asia",
+			"Mehtab ahmed"
 		]
 	},
 	"sitescout-new": "نئون",
@@ -10,6 +11,6 @@
 	"sitescout-edits": "سنوارون",
 	"sitescout-header-page": "صفحو",
 	"sitescout-header-comment": "راءِ (ڪمينٽ)",
-	"sitescout-header-user": "واهپيندڙ (يُوزر)",
+	"sitescout-header-user": "واپرائيندڙ",
 	"sitescout-change-filter": "ڇاڻي (فلٽر) تبديل ڪيو"
 }
