@@ -18,7 +18,10 @@ class SiteScoutXML extends SiteScout {
 			$user_title = Title::makeTitle( NS_USER, $item['username'] );
 			$talk_page = $user_title->getTalkPage()->getFullURL();
 			if ( $wgUserBoard ) {
-				$talk_page = UserBoard::getUserBoardURL( $item['username'] );
+				$talk_page = htmlspecialchars(
+					SpecialPage::getTitleFor( 'UserBoard' )->getFullURL( [ 'user' => $item['username'] ] ),
+					ENT_QUOTES
+				);
 			}
 
 			$page_title = str_replace( '&', '%26', $title->getPrefixedText() );

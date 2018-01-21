@@ -58,7 +58,10 @@ class SiteScoutHTML extends SiteScout {
 				$commentIcon = $avatar->getAvatarURL();
 				$talk_page = htmlspecialchars( $user_title->getTalkPage()->getFullURL(), ENT_QUOTES );
 				if ( $wgUserBoard ) {
-					$talk_page = UserBoard::getUserBoardURL( $item['username'] );
+					$talk_page = htmlspecialchars(
+						SpecialPage::getTitleFor( 'UserBoard' )->getFullURL( [ 'user' => $item['username'] ] ),
+						ENT_QUOTES
+					);
 				}
 				$output .= '<span class="item-user"><a href="' . htmlspecialchars( $user_title->getFullURL(), ENT_QUOTES ) . '" class="item-user-link">' . $commentIcon . ' ' . $item['username'] . '</a><a href="' . $talk_page . '" class="item-user-talk"><img src="' . $wgExtensionAssetsPath . '/SiteScout/resources/images/talkPageIcon.png" alt="" /></a></span>';
 				$output .= '</div>';
