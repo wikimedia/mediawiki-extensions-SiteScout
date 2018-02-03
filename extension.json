@@ -34,8 +34,7 @@
 	},
 	"ResourceModules": {
 		"ext.sitescout.css": {
-			"styles": "resources/css/sitescout.css",
-			"position": "top"
+			"styles": "resources/css/sitescout.css"
 		},
 		"ext.sitescout.js": {
 			"scripts": "resources/js/SiteScout.js",
@@ -45,8 +44,7 @@
 			],
 			"dependencies": [
 				"mediawiki.util"
-			],
-			"position": "bottom"
+			]
 		}
 	},
 	"manifest_version": 1
