@@ -1,8 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Kly"
 		]
 	},
-	"sitescout-header-type": "類型"
+	"sitescout": "網站偵察",
+	"sitescout-desc": "[[Special:SiteScout|顯示最近的社交更改]]",
+	"sitescout-anon": "匿名狂熱者",
+	"sitescout-new": "新",
+	"sitescout-minor": "小",
+	"sitescout-today-stats": "今日統計",
+	"sitescout-votes": "投票",
+	"sitescout-edits": "編輯",
+	"sitescout-comments": "評論",
+	"sitescout-thoughts": "網路看法",
+	"sitescout-header-type": "類型",
+	"sitescout-header-page": "頁面"
 }
