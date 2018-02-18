@@ -16,5 +16,8 @@
 	"sitescout-comments": "評論",
 	"sitescout-thoughts": "網路看法",
 	"sitescout-header-type": "類型",
-	"sitescout-header-page": "頁面"
+	"sitescout-header-page": "頁面",
+	"sitescout-header-comment": "評論",
+	"sitescout-header-user": "使用者",
+	"sitescout-change-filter": "更改篩選條件"
 }
