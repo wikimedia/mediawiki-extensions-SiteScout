@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"sitescout": "Site Scout",
+	"sitescout-desc": "[[Special:SiteScout|Εμφανίζει τις πρόσφατες κοινωνικές αλλαγές]]",
+	"sitescout-anon": "Ανώνυμος φανατικός",
+	"sitescout-new": "νέο",
+	"sitescout-minor": "μικρή",
+	"sitescout-today-stats": "Σημερινά στατιστικά",
+	"sitescout-votes": "Ψήφοι",
+	"sitescout-edits": "Επεξεργασίες",
+	"sitescout-comments": "Σχόλια",
+	"sitescout-thoughts": "Σκέψεις δικτύου",
+	"sitescout-header-type": "Τύπος",
+	"sitescout-header-page": "Σελίδα",
+	"sitescout-header-comment": "Σχόλιο",
+	"sitescout-header-user": "Χρήστης",
+	"sitescout-change-filter": "αλλαγή φίλτρου"
+}
