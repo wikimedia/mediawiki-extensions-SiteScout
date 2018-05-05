@@ -36,7 +36,13 @@ class SiteScoutXML extends SiteScout {
 					$network_name = $sport['name'];
 				}
 				$page_title = $network_name;
-				$page_url = SportsTeams::getNetworkURL( $item['sport_id'], $item['team_id'] );
+				$page_url = htmlspecialchars(
+					SpecialPage::getTitleFor( 'FanHome' )->getFullURL( [
+						'sport_id' => $item['sport_id'],
+						'team_id' => $item['team_id']
+					] ),
+					ENT_QUOTES
+				);
 			}
 
 			$output .= '<item>';
