@@ -1,10 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"ديفيد"
 		]
 	},
+	"sitescout": "كشاف الموقع",
+	"sitescout-desc": "[[Special:SiteScout|يعرض أحدث التغييرات الاجتماعية]]",
+	"sitescout-anon": "مجهول معجب",
+	"sitescout-new": "جديد",
 	"sitescout-minor": "طفيفة",
+	"sitescout-today-stats": "إحصائيات اليوم",
+	"sitescout-votes": "أصوات",
 	"sitescout-edits": "التعديلات",
-	"sitescout-comments": "التعليقات"
+	"sitescout-comments": "التعليقات",
+	"sitescout-thoughts": "أفكار الشبكة",
+	"sitescout-header-type": "النوع",
+	"sitescout-header-page": "الصفحة",
+	"sitescout-header-comment": "التعليق",
+	"sitescout-header-user": "المستخدم",
+	"sitescout-change-filter": "تغيير المرشح"
 }
