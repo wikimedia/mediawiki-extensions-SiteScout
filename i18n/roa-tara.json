@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"sitescout": "Esploratore d'u site",
+	"sitescout-desc": "[[Special:SiteScout|Face 'ndrucà le urteme cangiaminde suggiale]]",
+	"sitescout-anon": "Fanateche anonime",
+	"sitescout-new": "nuève",
+	"sitescout-minor": "stuédeche",
+	"sitescout-today-stats": "Statisteche de osce",
+	"sitescout-votes": "Vote",
+	"sitescout-edits": "Cangiaminde",
+	"sitescout-comments": "Commende",
+	"sitescout-thoughts": "Penziere jndr'à rezze",
+	"sitescout-header-type": "Tipe",
+	"sitescout-header-page": "Pàgene",
+	"sitescout-header-comment": "Commende",
+	"sitescout-header-user": "Utende",
+	"sitescout-change-filter": "cange 'u filtre"
+}
