@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"sitescout": "Izvidnik",
+	"sitescout-desc": "[[Special:SiteScout|Prikazuje nedavne društvene promijene]]",
+	"sitescout-anon": "Anoniman fanatik",
+	"sitescout-new": "novo",
+	"sitescout-minor": "manje",
+	"sitescout-today-stats": "Današnje statistike",
+	"sitescout-votes": "Glasova",
+	"sitescout-edits": "Izmjena",
+	"sitescout-comments": "Komentara",
+	"sitescout-header-type": "Vrsta",
+	"sitescout-header-page": "Stranica",
+	"sitescout-header-comment": "Komentar",
+	"sitescout-header-user": "Korisnik",
+	"sitescout-change-filter": "izmijeni filter"
+}
