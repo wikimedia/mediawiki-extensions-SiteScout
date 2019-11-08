@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"sitescout": "Sidespeider",
+	"sitescout-desc": "[[Special:SiteScout|Viser nylige sosiale endringer]]",
+	"sitescout-anon": "Anonym fanatiker",
+	"sitescout-new": "ny",
+	"sitescout-minor": "mindre",
+	"sitescout-today-stats": "Dagens statistikk",
+	"sitescout-votes": "Stemmer",
+	"sitescout-edits": "Redigeringer",
+	"sitescout-comments": "Kommentarer",
+	"sitescout-thoughts": "Nettverkstanker",
+	"sitescout-header-type": "Type",
+	"sitescout-header-page": "Side",
+	"sitescout-header-comment": "Kommentar",
+	"sitescout-header-user": "Bruker",
+	"sitescout-change-filter": "endre filter"
+}
