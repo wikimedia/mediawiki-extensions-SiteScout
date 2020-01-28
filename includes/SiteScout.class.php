@@ -430,7 +430,7 @@ class SiteScout {
 			array(
 				'rc_timestamp AS item_date', 'rc_title',
 				'rc_user', 'rc_user_text', 'rc_comment', 'rc_id', 'rc_minor',
-				'rc_new', 'rc_namespace', 'rc_cur_id', 'rc_this_oldid',
+				'rc_source', 'rc_namespace', 'rc_cur_id', 'rc_this_oldid',
 				'rc_last_oldid'
 			),
 			$where,
@@ -449,7 +449,7 @@ class SiteScout {
 				'userid' => $row->rc_user,
 				'comment' => $this->fixItemComment( $row->rc_comment ),
 				'minor' => $row->rc_minor,
-				'new' => $row->rc_new
+				'new' => $row->rc_source === RecentChange::SRC_NEW
 			);
 		}
 
