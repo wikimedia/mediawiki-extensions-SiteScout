@@ -19,7 +19,7 @@ class SiteScoutUpdate extends UnlistedSpecialPage {
 		$scout->setShowComments( $request->getVal( 'comments' ) );
 		$scout->setShowNetworkUpdates( $request->getVal( 'networkupdates' ) );
 		$scout->setTimestamp( $request->getVal( 'timestamp' ) );
-		$output = $scout->displayItems();
+		$output = $scout->displayItems( $this->getUser() );
 		echo $output;
 
 		// This line removes the navigation and everything else from the

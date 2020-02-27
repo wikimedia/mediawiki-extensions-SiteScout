@@ -1,12 +1,12 @@
 <?php
 class SiteScoutHTML extends SiteScout {
 
-	function displayItems() {
+	function displayItems( $user ) {
 		global $wgExtensionAssetsPath, $wgUserBoard;
 
 		$output = '';
 		$imgPath = $wgExtensionAssetsPath . '/SocialProfile/images/';
-		$this->populateItems();
+		$this->populateItems( $user );
 		$x = 1;
 
 		foreach ( $this->items as $item ) {

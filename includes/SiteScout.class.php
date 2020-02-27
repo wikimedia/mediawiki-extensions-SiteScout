@@ -80,7 +80,7 @@ class SiteScout {
 		} else {
 			$networkupdates = 0;
 		}
-		$largest_value = max( $edits, $votes, $comments, $networkupdates );
+		$largest_value = max( 1, $edits, $votes, $comments, $networkupdates );
 
 		$imgPath = $wgExtensionAssetsPath . '/SocialProfile/images/';
 
@@ -366,7 +366,7 @@ class SiteScout {
 		return $preview;
 	}
 
-	function populateItems() {
+	function populateItems( $user ) {
 		global $wgMemc;
 
 		$key = $wgMemc->makeKey( 'site_scout', $this->itemMax );
@@ -375,7 +375,7 @@ class SiteScout {
 			wfDebug( "Site scout loaded from cache\n" );
 			$this->all_items = $data;
 		} else {
-			$this->populateItemsDB();
+			$this->populateItemsDB( $user );
 		}
 
 		$this->filterItems();
@@ -413,9 +413,7 @@ class SiteScout {
 	 * tables for the relevant data.
 	 * The data is then cached in memcached for thirty seconds.
 	 */
-	function populateItemsDB() {
-		global $wgUser;
-
+	function populateItemsDB( $user ) {
 		/**
 		Edits
 		**/
@@ -495,8 +493,8 @@ class SiteScout {
 		Comments
 		**/
 		$block_list = array();
-		if ( $wgUser->getId() != 0 ) {
-			$block_list = CommentFunctions::getBlockList( $wgUser->getId() );
+		if ( $user->getId() != 0 ) {
+			$block_list = CommentFunctions::getBlockList( $user->getId() );
 		}
 
 		$dbr = wfGetDB( DB_REPLICA );
@@ -519,7 +517,7 @@ class SiteScout {
 		);
 		foreach ( $res as $row ) {
 			if ( !in_array( $row->Comment_Username, $block_list ) ) {
-				if ( $row->Comment_user_id != 0 || $wgUser->isAllowed( 'commentadmin' ) ) {
+				if ( $row->Comment_user_id != 0 || $user->isAllowed( 'commentadmin' ) ) {
 					$username = $row->Comment_Username;
 				} else {
 					$username = wfMessage( 'sitescout-anon' )->plain();

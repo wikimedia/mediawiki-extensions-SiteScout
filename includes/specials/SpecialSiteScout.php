@@ -72,7 +72,7 @@ class SiteScoutPage extends SpecialPage {
 		$scout->setShowNetworkUpdates( $show_network_updates );
 
 		$output .= $scout->getControls();
-		$output .= $scout->getHeader() . $scout->displayItems();
+		$output .= $scout->getHeader() . $scout->displayItems( $this->getUser() );
 
 		$output .= '<div id="sitescout-utility-time" style="display:none;">' . time() . '</div>';
 		$out->addHTML( $output );

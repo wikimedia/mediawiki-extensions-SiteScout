@@ -1,11 +1,11 @@
 <?php
 class SiteScoutXML extends SiteScout {
 
-	function displayItems() {
+	function displayItems( $user ) {
 		global $wgUserBoard;
 
 		$output = '';
-		$this->populateItems();
+		$this->populateItems( $user );
 		$x = 1;
 
 		foreach ( $this->items as $item ) {
